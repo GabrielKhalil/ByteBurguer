@@ -588,6 +588,10 @@
         flex-direction: column;
     }
 
+    .cardapio-button{
+        width: 50%;
+    }
+
     .bloco-imgs3 {
         display: flex;
         flex-direction: column;
@@ -614,6 +618,10 @@
           width: 70%;
       }
 
+      .cardapio-button{
+        width: 70%;
+      }
+
       .title-cardapio h1 {
           font-size: 5rem;
       }
@@ -627,4 +635,18 @@
           font-size: 2rem;
       }
 
+  }
+
+  @media(max-width: 450px) {
+    .first-burguer {
+        width: 90%;
+    }
+
+    .cardapio-button{
+      width: 90%;
+    }
+
+    html{
+        font-size: 0.8rem;
+    }
   }
