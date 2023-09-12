@@ -728,22 +728,6 @@
       }
   }
 
-
-
-
-  .menu-hamburguer {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333; /* Cor das barras */
-    margin: 3px 0;
-    transition: 0.4s;
-  }
   
   /* Estilo para ocultar o menu hamburguer em telas maiores */
   @media screen and (max-width: 768px) {
