@@ -11,6 +11,7 @@
 
   }
 
+
   .navegacao {
       background-color: rgba(21, 21, 21, 0.8);
       display: flex;
@@ -123,6 +124,7 @@
       align-items: center;
       gap: 30px;
       padding: 20px;
+      overflow-y: hidden;
       /* Adicionei um espaçamento para melhorar a legibilidade */
   }
 
@@ -318,8 +320,8 @@
       transform: scale(1.1);
   }
 
-  .cardapio-button{
-    background-color: #962626;
+  .cardapio-button {
+      background-color: #962626;
       height: 50px;
       border: none;
       color: #f2f2f2;
@@ -336,15 +338,15 @@
       cursor: pointer;
   }
 
-  .botao-carregar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
+  .botao-carregar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2%;
   }
 
-  .cardapio-completo{
-    background-color: #962626;
+  .cardapio-completo {
+      background-color: #962626;
       height: 50px;
       border: none;
       color: #f2f2f2;
@@ -363,15 +365,15 @@
       cursor: pointer;
   }
 
-  .botao-cardapio a{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+  .botao-cardapio a {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
   }
 
-  
+
   .first-burguer p {
       text-align: center;
       font-size: 2.2rem;
@@ -583,26 +585,27 @@
           display: flex;
           flex-direction: column;
       }
+
       .bloco-imgs2 {
-        display: flex;
-        flex-direction: column;
-    }
+          display: flex;
+          flex-direction: column;
+      }
 
-    .cardapio-button{
-        width: 50%;
-    }
+      .cardapio-button {
+          width: 50%;
+      }
 
-    .bloco-imgs3 {
-        display: flex;
-        flex-direction: column;
-    }
+      .bloco-imgs3 {
+          display: flex;
+          flex-direction: column;
+      }
 
-    .bloco-imgs4 {
-        display: flex;
-        flex-direction: column;
-    }
+      .bloco-imgs4 {
+          display: flex;
+          flex-direction: column;
+      }
 
-     
+
 
       .links-nav {
           font-size: 2.2rem;
@@ -618,8 +621,8 @@
           width: 70%;
       }
 
-      .cardapio-button{
-        width: 70%;
+      .cardapio-button {
+          width: 70%;
       }
 
       .title-cardapio h1 {
@@ -638,75 +641,119 @@
   }
 
   @media(max-width: 450px) {
-    .first-burguer {
-        width: 90%;
-    }
+      .first-burguer {
+          width: 90%;
+      }
 
-    .cardapio-button{
-      width: 90%;
-    }
+      .cardapio-button {
+          width: 90%;
+      }
 
-    html{
-        font-size: 0.8rem;
-    }
+      html {
+          font-size: 0.8rem;
+      }
   }
 
   .preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	animation: spinz 1.35s linear infinite;
-	width: 100%;
-	height: 100%;
-	/* background-color: #ffffff; */
-	background-color: #232224;       /* Change the background color here */
-	z-index: 100;
+      position: fixed;
+      top: 0;
+      left: 0;
+      animation: spinz 1.5s linear infinite;
+      width: 100%;
+      height: 100%;
+      background-color: #232224;
+      /* Change the background color here */
+      z-index: 100;
   }
-  
+
   .loader {
-	border: 16px solid #232224;
-	border-top: 16px solid #962626;  /* Change the preloader color here */
-	border-radius: 50%;
-	width: 120px;
-	height: 120px;
-	animation: spin 1.35s linear infinite;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -60px;
-	margin-left: -60px;
+      border: 16px solid #fff;
+      border-top: 16px solid #962626;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 1.5s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -60px;
+      margin-left: -60px;
   }
 
   @keyframes spin {
-	0% {
-	  transform: rotate(0deg);
-	  opacity:1;
-	}
-	50% {
-	  transform: rotate(360deg);
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	  transform: rotate(180deg);
-	}
-	100% {
-	  transform: rotate(0deg);
-	  opacity:0;
-	}
+      0% {
+          transform: rotate(0deg);
+          opacity: 1;
+      }
+
+      25% {
+          transform: rotate(-90deg);
+          /* Rotação anti-horária de 90 graus */
+          opacity: 1;
+      }
+
+      50% {
+          transform: rotate(-180deg);
+          /* Rotação anti-horária de 180 graus */
+          opacity: 1;
+      }
+
+      75% {
+          transform: rotate(-270deg);
+          /* Rotação anti-horária de 270 graus */
+          opacity: 1;
+      }
+
+      100% {
+          transform: rotate(-360deg);
+          /* Rotação anti-horária de 360 graus */
+          opacity: 0;
+      }
+  }
+
+  @keyframes spinz {
+      0% {
+          opacity: 1;
+      }
+
+      50% {
+          opacity: 1;
+      }
+
+      75% {
+          opacity: 1;
+      }
+
+      100% {
+          opacity: 0;
+      }
+  }
+
+
+
+
+  .menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
   }
   
-  @keyframes spinz {
-	0% {
-	  opacity:1;
-	}
-	50% {
-	  opacity:1;
-	}
-	75% {
-	  opacity:1;
-	}
-	100% {
-	  opacity:0;
-	}
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Cor das barras */
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  /* Estilo para ocultar o menu hamburguer em telas maiores */
+  @media screen and (max-width: 768px) {
+    .menu-hamburguer {
+      display: flex;
+    }
+  
+    /* Esconda os links de navegação quando o menu hamburguer estiver visível */
+    .links-nav {
+      display: none;
+    }
   }
