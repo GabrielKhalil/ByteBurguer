@@ -729,14 +729,3 @@
   }
 
   
-  /* Estilo para ocultar o menu hamburguer em telas maiores */
-  @media screen and (max-width: 768px) {
-    .menu-hamburguer {
-      display: flex;
-    }
-  
-    /* Esconda os links de navegação quando o menu hamburguer estiver visível */
-    .links-nav {
-      display: none;
-    }
-  }
